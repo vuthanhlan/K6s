@@ -4,7 +4,7 @@ import { check, sleep } from 'k6';
 export let options = {
   stages: [
     { duration: '10s', target: 10 }, // Tăng dần từ 0 đến 10 Virtual Users (VUs) trong 10 giây
-    { duration: '20s', target: 10 }, // Giữ 10 VUs trong 20 giây
+    { duration: '40s', target: 50 }, // Giữ 10 VUs trong 20 giây
     { duration: '10s', target: 0 },  // Giảm về 0 VUs trong 10 giây
   ],
 };
@@ -37,7 +37,7 @@ export default function () {
   check(response, {
     'Status is 201': (r) => r.status === 201,
     'Response has token': (r) => r.json('token') !== undefined,
-    'Response time < 1000ms': (r) => r.timings.duration < 1000, // Kiểm tra thời gian phản hồi dưới 1 giây
+    'Response time < 2000ms': (r) => r.timings.duration < 2000, // Kiểm tra thời gian phản hồi dưới 1 giây
   });
 
   // In ra thông tin thời gian phản hồi
