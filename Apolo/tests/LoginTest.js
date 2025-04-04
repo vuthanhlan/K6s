@@ -10,7 +10,7 @@ export let options = {
 };
 
 // export let options = {
-//   vus: 5, // Chạy với 1 user
+//   vus: 5, // Chạy với 5 user
 //   duration: '10s', // Chạy trong 10 giây
 // };
 // URL của API đăng nhập
