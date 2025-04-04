@@ -15,20 +15,20 @@ export let options = {
 };
 
 // URL của API get profile by ID
-const url = 'https://lms-apollo-api.m-team.asia/student/profile';
+const url = 'https://lms-apollo-api.m-team.asia/student/progress/home-learning?classId=9';
 
-const token = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzEsImVtYWlsIjoiYmFjdWJvbjIwMTVAZ21haWwuY29tIiwiaWF0IjoxNzQzNzM1ODUyLCJleHAiOjE3NDYzMjc4NTJ9.GNXSk9UPSfEIAiM_urK1RvCetjVIwlpD5LpNA_uBp-I';
+const token = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzEsImVtYWlsIjoiYmFjdWJvbjIwMTVAZ21haWwuY29tIiwiaWF0IjoxNzQzNzUzNjI2LCJleHAiOjE3NDYzNDU2MjZ9.kQLZJcAsFmNM71DQCVLlJ4n-dZB91x4PXoQvM7w6g50';
 
 export default function(){
     const params = {
         headers: {
-            'accept' : 'application/json, text/plain, */*',
+            accept: 'application/json, text/plain, */*',
             'accept-language': 'en',
             'authorization' : token,
-            'if-none-match' : 'W/"1a8-kk6EClbMNZ0TbNEKqR+PEltKHlU"',
-            'origin' : 'https://d2r13z9cfyrlkx.cloudfront.net',
-            'priority' : 'u=1, i',
-            'referer' : 'https://d2r13z9cfyrlkx.cloudfront.net/',
+            
+            origin: 'https://d2r13z9cfyrlkx.cloudfront.net',
+            priority: 'u=1, i',
+            referer: 'https://d2r13z9cfyrlkx.cloudfront.net/',
             'sec-ch-ua': '"Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"',
             'sec-ch-ua-mobile': '?0',
             'sec-ch-ua-platform': '"Windows"',
@@ -37,7 +37,7 @@ export default function(){
             'sec-fetch-site': 'cross-site',
             'student-id': '13',
             'user-agent':
-                'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36',
+              'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36',
         },
     };
 
