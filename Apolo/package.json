@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "har-to-k6": "^0.14.10"
+  }
+}
